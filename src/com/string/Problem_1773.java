@@ -29,4 +29,18 @@ public class Problem_1773 {
 		return result;
 	}
 
+	public static void main(String args[]) {
+		int nums[]= {-3,2,-3,4,2}; 
+		int startValue = 1 , current_sum = 0;
+	     for(int i=0;i<nums.length;i++){
+	         //current_sum += startValue + nums[i];
+	         current_sum += i==0?startValue + nums[i]:nums[i];
+	         if(current_sum<1){
+	            i=-1;
+	            startValue+=1;
+	            current_sum = 0;
+	         }
+	     }
+	     System.out.println(startValue);
+	}
 }
