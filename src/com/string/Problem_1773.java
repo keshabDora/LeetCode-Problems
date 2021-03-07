@@ -1,5 +1,6 @@
 package com.string;
 
+import java.util.HashSet;
 import java.util.List;
 
 /*
@@ -18,6 +19,7 @@ public class Problem_1773 {
 		} else if (ruleKey.equals("name")) {
 			k = 2;
 		}
+
 		int result = 0;
 
 		for (List<String> ss : items) {
